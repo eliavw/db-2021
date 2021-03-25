@@ -2,7 +2,7 @@
 
 **Beschrijving**
 
-Voor elke manager, voor elke keer dat deze manager meer dan `X` wins heeft, geef: het aantal wins, het aantal losses, het jaar, de gegeven naam en de achternaam van de manager, en het teamID.
+Voor elke manager, voor elke keer dat deze manager meer dan `X` games heeft, geef: het aantal wins, het aantal losses, het jaar, de gegeven naam en de achternaam van de manager, en het teamID.
 
 Sorteer eerst aflopend op wins, dan oplopend op: losses, jaar, teamID, achternaam en gegeven naam.
 
