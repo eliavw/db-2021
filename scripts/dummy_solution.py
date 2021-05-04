@@ -17,12 +17,8 @@ def query_02(connection, column_names):
         nameLast
     FROM 
         Master
-    WHERE 
-        1959 < birthYear AND
-        birthYear < 1970
-    ORDER BY 
-        nameLast, 
-        nameFirst;
+    LIMIT
+        100;
     """
 
     # Stap 2 & 3

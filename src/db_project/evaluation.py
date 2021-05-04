@@ -7,7 +7,7 @@ import os
 import pandas as pd
 
 from .fs_tools import create_fs, extract_appendix_from_fname, gen_idx_from_appendix
-from .reports import gen_header, gen_q_report, gen_report_heading
+from .reports import gen_header, gen_q_report, gen_report_heading, gen_separator
 from .specs import gen_q_name
 
 
@@ -34,13 +34,15 @@ def evaluate_script(
     true_dfs = extract_dfs_from_dir(sol_dir, keyword="model_solution")
     subm_dfs = extract_dfs_from_dir(res_dir)
 
-    all_q_idx = set([q for (q, p, v) in true_dfs.keys()])
+    all_q_idx = sorted(list(set([q for (q, p, v) in true_dfs.keys()])))
 
     for q_idx in all_q_idx:
         print("Evaluating query {}".format(q_idx + 1))
         evaluation_report += gen_header(q_idx, "query")
 
-        all_p_idx = set([p for (q, p, v) in true_dfs.keys() if q == q_idx])
+        all_p_idx = sorted(
+            list(set([p for (q, p, v) in true_dfs.keys() if q == q_idx]))
+        )
 
         for p_idx in all_p_idx:
             relevant_true_dfs = {
@@ -66,6 +68,7 @@ def evaluate_script(
                 scores_df = pd.concat([scores_df, df])
 
             else:
+                # If NONE or MORE THAN ONE submitted solution found: invalid submission, 0 on this query.
                 scores = {
                     (q_idx, p_idx, v): 0
                     for (q, p, v), df in true_dfs.items()
@@ -77,6 +80,8 @@ def evaluate_script(
                 evaluation_report += gen_q_report(
                     q_idx, q_param, p_idx=p_idx, crash=True
                 )
+
+        evaluation_report += gen_separator()
 
     with open(fs["file"]["eval_report"], "w") as f:
         print(evaluation_report, file=f)
@@ -131,11 +136,24 @@ def extract_q_param(all_q_params, q_idx, p_idx):
     """
     q_name = gen_q_name(q_idx)
 
-    p_idx_list = (
-        p_idx - 1
-    )  # Zero-based and One-based indexing is used in this project (and that is a bit of a fuzz...)
+    try:
+        return all_q_params[q_name][p_idx]
+    except:
+        msg = """
+        From parameters:
+            {}
+        I was unable to retrieve
+        q_idx:
+            {}
+        p_idx:
+            {}
 
-    return all_q_params[q_name][p_idx_list]
+        So returning empty dict instead.
+        """.format(
+            all_q_params, q_idx + 1, p_idx + 1
+        )
+        print(msg)
+        return dict()
 
 
 def convert_scores_dict_to_df(scores):
@@ -211,55 +229,71 @@ def evaluate_df(df_true, df_subm):
           to order, you obtain a score of 90%.
     """
 
+    df_true, df_subm = preprocess_dfs(df_true, df_subm)
+
     score, report = f1_dfs(df_true, df_subm)
 
-    if score == 1:
+    if score > 0.90:
+        """
+        Only in the case of a (very) high score, it makes sense to check the ordering. 
+        If the F1-score is low, we cannot even be sure the tuples we use to verify the ordering
+        even exist, making the effort pointless from the get go.
+        """
         if identical_sort(df_true, df_subm):
-            report = {"Perfect match": "Congratulations!"}
+            report["Ordering"] = "Consistent with model solution."
         else:
-            score *= 0.9
+            report["Ordering"] = "Inconsistent with model solution."
+            score = 0.9
     else:
+        report[
+            "Ordering"
+        ] = "Not verified; ordering only matters for queries with F1 > 0.90"
         score *= 0.9
 
     return score, report
+
+
+def preprocess_dfs(df_true, df_subm):
+    # Convert NULL/ NaN to 0, otherwise our TP/FP/FN go haywire.
+    df_true = df_true.fillna(0)
+    df_subm = df_subm.fillna(0)
+    return df_true, df_subm
 
 
 def f1_dfs(df_true, df_subm):
     """
     Computes the F1 score of the submitted DataFrame compared to true DataFrame
     """
-
-    # Convert NULL/ NaN to 0, otherwise our TP/FP/FN go haywire.
-    df_true = df_true.fillna(0)
-    df_subm = df_subm.fillna(0)
-
     # Convert to sets
     true_set = get_set_of_tuples(df_true)
     subm_set = get_set_of_tuples(df_subm)
 
     # Calculate F1 score
-    TP, FP, FN = tp_fp_fn(true_set, subm_set)
+    TP, FP, FN, fals_pos, fals_neg = tp_fp_fn(true_set, subm_set)
 
     precision = calc_precision(TP, FP)
     recall = calc_recall(TP, FN)
 
     F1 = calc_f1(precision, recall)
 
-    report = compile_report_dict(TP, FP, FN, precision, recall, F1)
+    report = compile_report_dict(
+        TP, FP, FN, precision, recall, F1, fals_pos=fals_pos, fals_neg=fals_neg
+    )
 
     return F1, report
 
 
 def identical_sort(df_true, df_subm):
     """
-    Check if 2 DataFrames are sorted the same
+    Check if two DataFrames are sorted the identically.
 
     This check is only conducted whenever a perfect F1 score is
     achieved.
 
     It only verifies whether or not the first and last tuple have the same
-    relative order in both DataFrames. It is thus not an explicit check! The
-    reason for this is the indeterminacy on the database side.
+    relative order in both DataFrames. It is thus not an explicit check! 
+    
+    The reason for this is the indeterminacy on the SQL-database side.
 
     Albeit rough, it suffices for our purposes.
     """
@@ -300,7 +334,7 @@ def tp_fp_fn(true_set, subm_set):
     fp = len(fals_pos)
     fn = len(fals_neg)
 
-    return tp, fp, fn
+    return tp, fp, fn, fals_pos, fals_neg
 
 
 def calc_precision(tp, fp):
@@ -333,27 +367,37 @@ def calc_f1(precision, recall):
     return f1
 
 
-def compile_report_dict(tp, fp, fn, precision, recall, f1):
+def compile_report_dict(
+    tp, fp, fn, precision, recall, f1, fals_pos=None, fals_neg=None
+):
     """
     Generate a dictionary of all the metrics, to be used to generate a report.
     """
 
-    sorting_remark = """
-    Your score is calculated as (F1*0.9).
-    If you had a perfect F1 score, this means that you returned all tuples
-    perfectly, but forgot to order them.
-    """
-
-    res = {
+    report = {
         "TP": tp,
         "FP": fp,
         "FN": fn,
         "precision": precision,
         "recall": recall,
         "F1": f1,
-        "Remark": sorting_remark,
     }
-    return res
+
+    if fp > 0:
+        report["FP intuition"] = "A tuple that should NOT have been in your solution."
+        report["FP example"] = next(iter(fals_pos))
+
+    if fn > 0:
+        report["FN intuition"] = "A tuple that should have been in your solution."
+        report["FN example"] = next(iter(fals_neg))
+
+    sorting_remark = """
+    A perfect F1 score means your results contained all tuples it should.
+    A perfect score requires a perfect F1 + perfect ordering.
+    """
+    report["Remark"] = sorting_remark
+
+    return report
 
 
 def idx_tuple_in_df(tuple_x, df):

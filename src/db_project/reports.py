@@ -80,6 +80,18 @@ def gen_score_overview(score, report, crash=False):
     return s_overview
 
 
+def gen_separator():
+    """To get some visual separation between queries in the evaluation report.
+    """
+
+    separator = """\n--- ------------------ --- ------------------ --- ------------------ --- ------------------ ---
+
+    
+    """
+
+    return separator
+
+
 def gen_crash_overview():
     """
     Returns the message included in the report when no csv file was found

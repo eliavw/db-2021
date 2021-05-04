@@ -8,7 +8,7 @@ import mysql.connector
 import pandas as pd  # Populaire package voor data-verwerking
 
 
-def verbind_met_GB(username, hostname, gegevensbanknaam, password=None):
+def verbind_met_GB(username, hostname, gegevensbanknaam, password=None, poort=3306):
     """
     Maak verbinding met een externe gegevensbank
 
@@ -25,6 +25,9 @@ def verbind_met_GB(username, hostname, gegevensbanknaam, password=None):
                         Wachtwoord kan al meegegeven worden. Indien niet, wordt
                         een wachtwoordveldje gegenereerd waar de gebruiker het
                         kan ingeven.
+    poort               int, defaults to 3306
+                        poort waarop MySQL luistert. Typisch is dat op poort 3306, 
+                        maar variaties zijn mogelijk.
     Returns
     -------
     connection          connection object
@@ -39,7 +42,7 @@ def verbind_met_GB(username, hostname, gegevensbanknaam, password=None):
         password = password
 
     connection = mysql.connector.connect(
-        host=hostname, user=username, passwd=password, db=gegevensbanknaam
+        host=hostname, user=username, passwd=password, db=gegevensbanknaam, port=poort
     )
     return connection
 
