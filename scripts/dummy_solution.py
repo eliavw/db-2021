@@ -11,7 +11,19 @@ def query_01(connection, column_names, X=150):
 
 def query_02(connection, column_names):
     # Bouw je query
-    query = "MAAK JE QUERY HIER"
+    query = """
+    SELECT 
+        nameFirst, 
+        nameLast
+    FROM 
+        Master
+    WHERE 
+        1959 < birthYear AND
+        birthYear < 1970
+    ORDER BY 
+        nameLast, 
+        nameFirst;
+    """
 
     # Stap 2 & 3
     res = run_query(connection, query)  # Query uitvoeren

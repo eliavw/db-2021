@@ -322,6 +322,10 @@ def run_single_function(q_method, connection, q_colnam, q_param, fname_csv):
 
         df = q_method(connection, q_colnam, **q_param)
         save_df(df, fname_csv)
+
+        msg = """----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        """
+        print(msg)
     except BaseException as error:
         print("Exception occurred in method {}:\n{}\n".format(method_name, error))
 

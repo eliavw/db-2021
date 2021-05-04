@@ -26,7 +26,9 @@ def query_01(connection, column_names, X=150):
         M.teamID, 
         P.nameLast, 
         P.nameGiven;
-    """.format(X=X)
+    """.format(
+        X=X
+    )
 
     # Stap 2 & 3
     res = run_query(connection, query)  # Query uitvoeren
@@ -71,13 +73,16 @@ def query_03(connection, column_names, X="Blue"):
     ORDER BY 
         teamID, 
         name;
-    """.format(X=X)
+    """.format(
+        X=X
+    )
 
     # Stap 2 & 3
     res = run_query(connection, query)  # Query uitvoeren
     df = res_to_df(res, column_names)  # Query in DataFrame brengen
 
     return df
+
 
 # Query 04
 def query_04(connection, column_names, X=3):
@@ -107,7 +112,9 @@ def query_04(connection, column_names, X=3):
         M.teamID, 
         P.nameLast, 
         P.nameFirst;
-    """.format(X=X)
+    """.format(
+        X=X
+    )
 
     # Stap 2 & 3
     res = run_query(connection, query)  # Query uitvoeren
@@ -143,7 +150,9 @@ def query_04_v_02(connection, column_names, X=3):
         M.teamID, 
         P.nameLast, 
         P.nameFirst;
-    """.format(X=X)
+    """.format(
+        X=X
+    )
 
     # Stap 2 & 3
     res = run_query(connection, query)  # Query uitvoeren
@@ -188,7 +197,9 @@ def query_05(connection, column_names, X=1975):
         T.name, 
         P.nameLast, 
         P.nameFirst;
-    """.format(X=X)
+    """.format(
+        X=X
+    )
 
     # Stap 2 & 3
     res = run_query(connection, query)  # Query uitvoeren
@@ -253,7 +264,9 @@ def query_07(connection, column_names, X=1950):
         Master.nameFirst, 
         AwardsPlayers.awardID, 
         AwardsPlayers.yearID;
-    """.format(X=X)
+    """.format(
+        X=X
+    )
 
     # Stap 2 & 3
     res = run_query(connection, query)  # Query uitvoeren
@@ -298,7 +311,9 @@ def query_08(connection, column_names, N=5, R=1):
         Age, 
         P1.nameLast, 
         P1.nameFirst;
-    """.format(N=N, R=R)
+    """.format(
+        N=N, R=R
+    )
 
     # Stap 2 & 3
     res = run_query(connection, query)  # Query uitvoeren

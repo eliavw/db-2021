@@ -33,5 +33,8 @@ DOC_FPS = dict(
 )
 
 DEMO_Q_PARAMS_FP = SOLUTION_DP / "demo_q_params.json"
+ALL_Q_PARAMS_FP = SOLUTION_DP / "all_q_params.json"
+
 ALL_Q_COLNAM_FP = SOLUTION_DP / "all_q_colnam.json"
 DUMMY_SOLUTION_FP = SCRIPTS_DP / "dummy_solution.py"
+MODEL_SOLUTION_FP = SCRIPTS_DP / "model_solution.py"

@@ -98,5 +98,3 @@ def res_to_df(query_result, column_names):
 
     df = pd.DataFrame(query_result, columns=column_names)
     return df
-
-

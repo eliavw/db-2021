@@ -13,9 +13,7 @@ from .specs import gen_q_name
 
 # Full evaluation
 def evaluate_script(
-    script_fname,
-    all_q_params=None,
-    params_fname="all_q_params.json",
+    script_fname, all_q_params=None, params_fname="all_q_params.json",
 ):
 
     # Preliminaries
@@ -133,7 +131,11 @@ def extract_q_param(all_q_params, q_idx, p_idx):
     """
     q_name = gen_q_name(q_idx)
 
-    return all_q_params[q_name][p_idx]
+    p_idx_list = (
+        p_idx - 1
+    )  # Zero-based and One-based indexing is used in this project (and that is a bit of a fuzz...)
+
+    return all_q_params[q_name][p_idx_list]
 
 
 def convert_scores_dict_to_df(scores):
