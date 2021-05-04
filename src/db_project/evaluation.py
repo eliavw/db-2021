@@ -31,7 +31,7 @@ def evaluate_script(
     scores_df = pd.DataFrame()
 
     # Actual comparison
-    true_dfs = extract_dfs_from_dir(sol_dir)
+    true_dfs = extract_dfs_from_dir(sol_dir, keyword="model_solution")
     subm_dfs = extract_dfs_from_dir(res_dir)
 
     all_q_idx = set([q for (q, p, v) in true_dfs.keys()])
@@ -168,7 +168,7 @@ def load_df(fname):
     return pd.read_csv(fname)
 
 
-def extract_dfs_from_dir(folder):
+def extract_dfs_from_dir(folder, keyword=""):
     """
     Collect relevant .csv files into DataFrames
 
@@ -179,8 +179,9 @@ def extract_dfs_from_dir(folder):
     of the filename (e.g., q_02_p_01) i extracted as keys.
     """
 
-    csv_files = [f for f in os.listdir(folder) if f.endswith(".csv")]
-    csv_files.sort()
+    csv_files = sorted(
+        [f for f in os.listdir(folder) if f.endswith(".csv") if keyword in f]
+    )
     keys = [
         gen_idx_from_appendix(extract_appendix_from_fname(fname)) for fname in csv_files
     ]

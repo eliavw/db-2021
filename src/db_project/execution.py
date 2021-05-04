@@ -62,10 +62,9 @@ def run_external_script(
 
     fs = create_fs(fname, params_fname=params_fname, suffix=suffix)
 
+    # DO *NOT* REMOVE "WITH SCOPE": OTHERWISE THE EXECUTION REPORTS BECOME EMPTY.
     f = io.StringIO()
-    with redirect_stdout(
-        f
-    ):  # DO *NOT* COMMENT THIS OUT! OTHERWISE THE EXECUTION REPORTS BECOME EMPTY.
+    with redirect_stdout(f):
         if q_idx is None:
             _, all_q_names, all_q_method, all_q_colnam, all_q_params = before_execution(
                 fname,
@@ -242,11 +241,10 @@ def run_all_queries(
                 fs, q_method, connection, q_colnam, q_params, q_idx=q_idx, v_idx=v_idx
             )
 
-        except BaseException as error:
+        except Exception as error:
             msg = """
                 An exception occurred in method {}:
                     {}
-
                 """.format(
                 method_name, error
             )
