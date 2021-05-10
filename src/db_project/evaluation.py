@@ -3,6 +3,7 @@ Functions for evaluation of csv files
 """
 import json
 import os
+from pathlib import Path
 
 import pandas as pd
 
@@ -13,7 +14,9 @@ from .specs import gen_q_name
 
 # Full evaluation
 def evaluate_script(
-    script_fname, all_q_params=None, params_fname="all_q_params.json",
+    script_fname,
+    all_q_params=None,
+    params_fname="all_q_params.json",
 ):
 
     # Preliminaries
@@ -21,6 +24,12 @@ def evaluate_script(
 
     if all_q_params is None:
         all_q_params = json.load(open(fs["file"]["all_q_params"], "r"))
+    elif isinstance(all_q_params, (str, Path)):
+        all_q_params = json.load(open(all_q_params))
+    elif isinstance(all_q_params, dict):
+        all_q_params = all_q_params
+    else:
+        raise ValueError("Either you provide Nothing, a filepath or a dict.")
 
     sol_dir = fs["dir"]["sol"]
     res_dir = fs["dir"]["res"]
@@ -235,7 +244,7 @@ def evaluate_df(df_true, df_subm):
 
     if score > 0.90:
         """
-        Only in the case of a (very) high score, it makes sense to check the ordering. 
+        Only in the case of a (very) high score, it makes sense to check the ordering.
         If the F1-score is low, we cannot even be sure the tuples we use to verify the ordering
         even exist, making the effort pointless from the get go.
         """
@@ -291,8 +300,8 @@ def identical_sort(df_true, df_subm):
     achieved.
 
     It only verifies whether or not the first and last tuple have the same
-    relative order in both DataFrames. It is thus not an explicit check! 
-    
+    relative order in both DataFrames. It is thus not an explicit check!
+
     The reason for this is the indeterminacy on the SQL-database side.
 
     Albeit rough, it suffices for our purposes.

@@ -1,146 +1,237 @@
 nameFirst,nameLast,Age,teamName,NrRankR
-Dick,McBride,24,Philadelphia Athletics,1
-Fred,Dunlap,25,St. Louis Maroons,1
-Charlie,Comiskey,26,St. Louis Browns,4
-Al,Spalding,26,Chicago White Stockings,1
-Joe,Cronin,27,Washington Senators,2
-Cap,Anson,28,Chicago White Stockings,5
-Bucky,Harris,28,Washington Senators,3
-John,Morrill,28,Boston Beaneaters,1
-Pop,Snyder,28,Cincinnati Red Stockings,1
-Patsy,Tebeau,28,Cleveland Spiders,1
-Fred,Clarke,29,Pittsburgh Pirates,4
-Bill,Watkins,29,Detroit Wolverines,1
-Frank,Chance,30,Chicago Cubs,4
-Rogers,Hornsby,30,St. Louis Cardinals,2
-Lon,Knight,30,Philadelphia Athletics,1
-Lou,Boudreau,31,Cleveland Indians,1
-Jack,Burdock,31,Boston Beaneaters,1
-Mickey,Cochrane,31,Detroit Tigers,2
-John,McGraw,31,New York Giants,11
-Bill,Carrigan,32,Boston Red Sox,2
-Clark,Griffith,32,Chicago White Sox,1
-Frank,Selee,32,Boston Beaneaters,5
-Tris,Speaker,32,Cleveland Indians,1
-George,Wright,32,Providence Grays,1
-Jimmy,Collins,33,Boston Americans,2
-Arthur,Irwin,33,Boston Reds,1
-King,Kelly,33,Boston Reds,1
-Jim,Mutrie,33,New York Metropolitans,3
-Jake,Stahl,33,Boston Red Sox,1
-Ted,Sullivan,33,St. Louis Maroons,1
-Charlie,Grimm,34,Chicago Cubs,4
-Bill,McGunnigle,34,Brooklyn Bridegrooms,2
-Fielder,Jones,35,Chicago White Sox,1
-Bill,Terry,35,New York Giants,3
-Joe,Tinker,35,Chicago Whales,1
-Sparky,Anderson,36,Cincinnati Reds,7
-Leo,Durocher,36,Brooklyn Dodgers,3
-Jim,Fregosi,37,California Angels,2
-Frankie,Frisch,37,St. Louis Cardinals,1
-Ned,Hanlon,37,Baltimore Orioles,5
-Tom,Kelly,37,Minnesota Twins,2
-Harry,Wright,37,Boston Red Stockings,6
-Frank,Bancroft,38,Providence Grays,1
-Gabby,Hartnett,38,Chicago Cubs,1
-Hughie,Jennings,38,Detroit Tigers,4
-Pants,Rowland,38,Chicago White Sox,1
-Buck,Showalter,38,New York Yankees,3
-Dick,Williams,38,Boston Red Sox,6
-Yogi,Berra,39,New York Yankees,2
-Tony,LaRussa,39,Chicago White Sox,12
-Bill,McKechnie,39,Pittsburgh Pirates,4
-Pat,Moran,39,Philadelphia Phillies,2
-Earl,Weaver,39,Baltimore Orioles,6
-Eric,Wedge,39,Cleveland Indians,1
-Donie,Bush,40,Pittsburgh Pirates,1
-Al,Dark,40,San Francisco Giants,3
-Kevin,Kennedy,40,Texas Rangers,2
-Connie,Mack,40,Philadelphia Athletics,9
-Fred,Mitchell,40,Chicago Cubs,1
-Eddie,Sawyer,40,Philadelphia Phillies,1
-Bruce,Bochy,41,San Diego Padres,6
-Ozzie,Guillen,41,Chicago White Sox,2
-Billy,Martin,41,Minnesota Twins,6
-Bill,Virdon,41,Pittsburgh Pirates,3
-Pat,Corrales,42,Philadelphia Phillies,1
-Ralph,Houk,42,New York Yankees,3
-Dick,Howser,42,New York Yankees,5
-Fred,Hutchinson,42,Cincinnati Reds,1
-Joe,McCarthy,42,Chicago Cubs,9
-Joe,Torre,42,Atlanta Braves,13
-Miller,Huggins,43,New York Yankees,6
-Davey,Johnson,43,New York Mets,6
-Mike,Matheny,43,St. Louis Cardinals,3
-Sam,Mele,43,Minnesota Twins,1
-Gene,Michael,43,New York Yankees,1
-Danny,Murtaugh,43,Pittsburgh Pirates,5
-Buck,Rodgers,43,Milwaukee Brewers,2
-Luke,Sewell,43,St. Louis Browns,1
-Walter,Alston,44,Brooklyn Dodgers,7
-Hank,Bauer,44,Baltimore Orioles,1
-Bobby,Cox,44,Toronto Blue Jays,15
-Hal,Lanier,44,Houston Astros,1
-Dave,Roberts,44,Los Angeles Dodgers,1
-Red,Schoendienst,44,St. Louis Cardinals,2
-Brad,Ausmus,45,Detroit Tigers,1
-Ron,Gardenhire,45,Minnesota Twins,6
-Cito,Gaston,45,Toronto Blue Jays,5
-Joe,Girardi,45,New York Yankees,3
-Whitey,Herzog,45,Kansas City Royals,6
-Gil,Hodges,45,New York Mets,1
-Gene,Tenace,45,Toronto Blue Jays,1
-Dallas,Green,46,Philadelphia Phillies,2
-Mike,Hargrove,46,Cleveland Indians,5
-Jim,Leyland,46,Pittsburgh Pirates,6
-Al,Lopez,46,Cleveland Indians,2
-Bob,Melvin,46,Arizona Diamondbacks,3
-Bill,Phillips,46,Indianapolis Hoosiers,1
-Mike,Scioscia,46,Anaheim Angels,6
-Clyde,Sukeforth,46,Brooklyn Dodgers,1
-Jimy,Williams,46,Toronto Blue Jays,1
-Bob,Brenly,47,Arizona Diamondbacks,2
-Jack,Chapman,47,Louisville Colonels,1
-Eddie,Dyer,47,St. Louis Cardinals,1
-Darrell,Johnson,47,Boston Red Sox,1
-Gene,Lamont,47,Chicago White Sox,2
-Jerry,Manuel,47,Chicago White Sox,1
-John,McNamara,47,Cincinnati Reds,3
-Lou,Piniella,47,Cincinnati Reds,6
-George,Stallings,47,Boston Braves,1
-Del,Baker,48,Detroit Tigers,1
-Dusty,Baker,48,San Francisco Giants,6
-Terry,Francona,48,Boston Red Sox,2
-Gabby,Street,48,St. Louis Cardinals,2
-Jim,Frey,49,Kansas City Royals,3
-Fredi,Gonzalez,49,Atlanta Braves,1
-Billy,Southworth,49,St. Louis Cardinals,4
-Jim,Tracy,49,Los Angeles Dodgers,1
-Matt,Williams,49,Washington Nationals,1
-Ed,Barrow,50,Boston Red Sox,1
-Charlie,Fox,50,San Francisco Giants,1
-Tom,Lasorda,50,Los Angeles Dodgers,8
-Johnny,Oates,50,Texas Rangers,3
-Joe,Altobelli,51,Baltimore Orioles,1
-Jeff,Banister,51,Texas Rangers,2
-Larry,Dierker,51,Houston Astros,5
-John,Farrell,51,Boston Red Sox,2
-Chuck,Tanner,51,Pittsburgh Pirates,1
-Harvey,Kuenn,52,Milwaukee Brewers,1
-Don,Mattingly,52,Los Angeles Dodgers,3
-Willie,Randolph,52,New York Mets,1
-Bill,Rigney,52,Minnesota Twins,1
-Wilbert,Robinson,52,Brooklyn Robins,2
-John,Gibbons,53,Toronto Blue Jays,1
-Kid,Gleason,53,Chicago White Sox,1
-Johnny,Keane,53,St. Louis Cardinals,1
-Ken,Macha,53,Oakland Athletics,2
-Danny,Ozark,53,Philadelphia Phillies,3
-Mayo,Smith,53,Detroit Tigers,1
-Jim,Fanning,54,Montreal Expos,1
-Kirk,Gibson,54,Arizona Diamondbacks,1
-Lum,Harris,54,Atlanta Braves,1
-Art,Howe,54,Oakland Athletics,2
-Joe,Maddon,54,Tampa Bay Rays,3
-Steve,O'Neill,54,Detroit Tigers,1
-Ron,Roenicke,55,Milwaukee Brewers,1
+Silver,Flint,24,Chicago White Stockings,1
+John,Ward,24,New York Gothams,1
+Lou,Boudreau,25,Cleveland Indians,5
+Charlie,Comiskey,25,St. Louis Browns,3
+John,Hatfield,26,New York Mutuals,1
+Dick,McBride,26,Philadelphia Athletics,1
+John,McGraw,26,Baltimore Orioles,3
+Cap,Anson,27,Chicago White Stockings,2
+Bill,Henderson,27,Baltimore Monumentals,1
+John,Morrill,27,Boston Red Caps,2
+John,Kelly,28,Louisville Colonels,1
+Joe,Cronin,29,Boston Red Sox,2
+Rogers,Hornsby,29,St. Louis Cardinals,1
+Harry,Stovey,29,Philadelphia Athletics,1
+Bill,Carrigan,30,Boston Red Sox,1
+Bill,Craver,30,Philadelphia Whites,1
+Bucky,Harris,30,Washington Senators,4
+Al,Buckenberger,31,Pittsburgh Pirates,1
+Red,Dooin,31,Philadelphia Phillies,2
+Jim,Hart,31,Louisville Colonels,1
+Joe,Kelley,31,Cincinnati Reds,2
+George,McManus,31,St. Louis Brown Stockings,1
+George,Sisler,31,St. Louis Browns,1
+Joe,Start,31,New York Mutuals,1
+Nick,Young,31,Washington Olympics,1
+Fred,Clarke,32,Pittsburgh Pirates,2
+Jim,Mutrie,32,New York Metropolitans,2
+Bob,Ferguson,33,Chicago White Stockings,2
+Clark,Griffith,33,Chicago White Sox,4
+Nap,Lajoie,33,Cleveland Naps,1
+George,Wood,33,Philadelphia Athletics,1
+Dave,Bristol,34,Cincinnati Reds,4
+Bibb,Falk,34,Cleveland Indians,1
+Tommy,Holmes,34,Boston Braves,1
+Tom,Loftus,34,Cincinnati Reds,1
+Tris,Speaker,34,Cleveland Indians,1
+Jake,Stahl,34,Boston Red Sox,1
+Billy,Sullivan,34,Chicago White Sox,1
+Bill,Armour,35,Cleveland Naps,1
+Frank,Bancroft,35,Detroit Wolverines,4
+Hugo,Bezdek,35,Pittsburgh Pirates,2
+Tom,Burns,35,Pittsburgh Pirates,2
+Mickey,Cochrane,35,Detroit Tigers,1
+Jimmy,Collins,35,Boston Americans,1
+Al,Pratt,35,Pittsburg Alleghenys,1
+Eric,Wedge,35,Cleveland Indians,5
+Roger,Bresnahan,36,Chicago Cubs,1
+Donie,Bush,36,Washington Senators,2
+Patsy,Donovan,36,St. Louis Cardinals,2
+Arthur,Irwin,36,Philadelphia Phillies,1
+Bill,Killefer,36,Chicago Cubs,1
+Charlie,Morton,36,Toledo Maumees,1
+Frank,Quilici,36,Minnesota Twins,1
+Larry,Schlafly,36,Buffalo Buffeds,1
+Bill,Sharsig,36,Philadelphia Athletics,1
+Buck,Showalter,36,New York Yankees,2
+Billy,Southworth,36,St. Louis Cardinals,5
+Fred,Hutchinson,37,St. Louis Cardinals,1
+Rene,Lachemann,37,Seattle Mariners,2
+Nick,Leyva,37,Philadelphia Phillies,1
+Christy,Mathewson,37,Cincinnati Reds,1
+Jim,Price,37,New York Gothams,1
+Frank,Selee,37,Boston Beaneaters,2
+Pie,Traynor,37,Pittsburgh Pirates,2
+Jimmy,Williams,37,St. Louis Browns,1
+Manny,Acta,38,Washington Nationals,2
+Billy,Barnie,38,Baltimore Orioles,1
+Jimmy,Callahan,38,Chicago White Sox,1
+Kevin,Cash,38,Tampa Bay Rays,1
+Buck,Ewing,38,Cincinnati Reds,1
+Gene,Mauch,38,Philadelphia Phillies,8
+Mel,Ott,38,New York Giants,1
+Gus,Schmelz,38,Cincinnati Red Stockings,2
+George,Stovall,38,Kansas City Packers,1
+Ty,Cobb,39,Detroit Tigers,1
+Pat,Corrales,39,Texas Rangers,1
+Bobby,Cox,39,Atlanta Braves,4
+Hugh,Duffy,39,Philadelphia Phillies,3
+Jim,Fregosi,39,California Angels,2
+Gabby,Hartnett,39,Chicago Cubs,1
+Connie,Mack,39,Philadelphia Athletics,3
+Joe,McCarthy,39,Chicago Cubs,3
+Dickey,Pearce,39,St. Louis Brown Stockings,1
+Roger,Peckinpaugh,39,Cleveland Indians,4
+Bobby,Valentine,39,Texas Rangers,3
+Dick,Williams,39,Boston Red Sox,6
+Bill,Donovan,40,New York Yankees,1
+Jim,Essian,40,Chicago Cubs,1
+Frankie,Frisch,40,St. Louis Cardinals,5
+George,Gibson,40,Pittsburgh Pirates,1
+Miller,Huggins,40,New York Yankees,1
+Ray,Miller,40,Minnesota Twins,3
+Frank,Robinson,40,Cleveland Indians,3
+Mayo,Smith,40,Philadelphia Phillies,2
+Tom,Trebelhorn,40,Milwaukee Brewers,3
+Bobby,Bragan,41,Cleveland Indians,1
+Eddie,Mathews,41,Atlanta Braves,1
+George,McBride,41,Washington Senators,1
+Red,Rolfe,41,Detroit Tigers,1
+Joe,Torre,41,New York Mets,3
+Harry,Wright,41,Boston Red Caps,5
+Bruce,Bochy,42,San Diego Padres,4
+Al,Dark,42,San Francisco Giants,1
+Joe,Girardi,42,Florida Marlins,2
+Joe,Maddon,42,California Angels,3
+Dave,Miley,42,Cincinnati Reds,1
+John,Mizerock,42,Kansas City Royals,1
+Terry,Moore,42,Philadelphia Phillies,1
+George,Moriarty,42,Detroit Tigers,1
+Danny,Murtaugh,42,Pittsburgh Pirates,2
+Bo,Porter,42,Houston Astros,1
+Jim,Riggleman,42,San Diego Padres,3
+Eddie,Sawyer,42,Philadelphia Phillies,1
+Ken,Aspromonte,43,Cleveland Indians,1
+Daren,Brown,43,Seattle Mariners,1
+Jimmy,Dykes,43,Chicago White Sox,7
+Joe,Gordon,43,Cleveland Indians,3
+Ozzie,Guillen,43,Chicago White Sox,1
+Butch,Hobson,43,Boston Red Sox,1
+Jim,Leyland,43,Pittsburgh Pirates,1
+Lloyd,McClendon,43,Pittsburgh Pirates,3
+Bill,McKechnie,43,St. Louis Cardinals,5
+John,McNamara,43,San Diego Padres,3
+Bid,McPhee,43,Cincinnati Reds,1
+Bob,Melvin,43,Seattle Mariners,4
+Fred,Mitchell,43,Boston Braves,1
+Mike,Redmond,43,Miami Marlins,2
+Paul,Richards,43,Chicago White Sox,1
+Dave,Roberts,43,San Diego Padres,1
+Jimy,Williams,43,Toronto Blue Jays,2
+Bobby,Winkles,43,California Angels,1
+Toby,Harrah,44,Texas Rangers,1
+Dan,Howley,44,St. Louis Browns,1
+Tom,Kelly,44,Minnesota Twins,4
+Jack,Krol,44,St. Louis Cardinals,1
+Jimmy,McAleer,44,St. Louis Browns,1
+Billy,Murray,44,Philadelphia Phillies,1
+Lou,Piniella,44,New York Yankees,3
+Branch,Rickey,44,St. Louis Cardinals,1
+Jack,Tighe,44,Detroit Tigers,1
+Jimmie,Wilson,44,Chicago Cubs,1
+Joe,Altobelli,45,San Francisco Giants,4
+Craig,Counsell,45,Milwaukee Brewers,2
+John,Felske,45,Philadelphia Phillies,1
+Dallas,Green,45,Philadelphia Phillies,2
+Trey,Hillman,45,Kansas City Royals,2
+Clint,Hurdle,45,Colorado Rockies,6
+Hughie,Jennings,45,Detroit Tigers,3
+Jim,Marshall,45,Chicago Cubs,1
+Jackie,Moore,45,Oakland Athletics,1
+Jerry,Narron,45,Texas Rangers,2
+Tony,Pena,45,Kansas City Royals,1
+Norm,Sherry,45,California Angels,1
+Dick,Sisler,45,Cincinnati Reds,1
+Birdie,Tebbetts,45,Cincinnati Redlegs,3
+Del,Baker,46,Detroit Tigers,2
+Dusty,Baker,46,San Francisco Giants,4
+Ossie,Bluege,46,Washington Senators,1
+Jimmy,Burke,46,St. Louis Browns,1
+Phil,Garner,46,Milwaukee Brewers,2
+Fredi,Gonzalez,46,Florida Marlins,2
+Charlie,Grimm,46,Chicago Cubs,1
+Pinky,Higgins,46,Boston Red Sox,2
+Art,Howe,46,Houston Astros,4
+Walter,Johnson,46,Cleveland Indians,1
+Steve,O'Neill,46,Cleveland Indians,4
+Doug,Rader,46,California Angels,1
+Red,Schoendienst,46,St. Louis Cardinals,5
+Chuck,Tanner,46,Chicago White Sox,3
+Alan,Trammell,46,Detroit Tigers,2
+Steve,Boros,47,Oakland Athletics,3
+Billy,Hitchcock,47,Baltimore Orioles,1
+Mike,Jorgensen,47,St. Louis Cardinals,1
+Tony,LaRussa,47,Oakland Athletics,5
+Gabby,Street,47,St. Louis Cardinals,1
+Robin,Ventura,47,Chicago White Sox,3
+Don,Wakamatsu,47,Seattle Mariners,1
+Sparky,Anderson,48,Detroit Tigers,3
+Johnny,Cooney,48,Boston Braves,1
+Roger,Craig,48,San Diego Padres,3
+Bob,Geren,48,Oakland Athletics,2
+Buck,Rodgers,48,Montreal Expos,3
+Burt,Shotton,48,Philadelphia Phillies,1
+Earl,Weaver,48,Baltimore Orioles,2
+Walter,Alston,49,Los Angeles Dodgers,2
+Don,Baylor,49,Colorado Rockies,1
+Buddy,Bell,49,Colorado Rockies,2
+Ken,Boyer,49,St. Louis Cardinals,1
+John,Farrell,49,Toronto Blue Jays,2
+Jack,Hendricks,49,Cincinnati Reds,1
+Whitey,Herzog,49,St. Louis Cardinals,2
+Roy,Johnson,49,Chicago Cubs,1
+Frank,Lucchesi,49,Texas Rangers,1
+Bill,Norman,49,Detroit Tigers,1
+Cookie,Rojas,49,California Angels,1
+Bob,Scheffing,49,Detroit Tigers,1
+Don,Zimmer,49,Boston Red Sox,3
+Terry,Collins,50,Anaheim Angels,3
+Lee,Elia,50,Philadelphia Phillies,1
+Jim,Lefebvre,50,Chicago Cubs,2
+Bob,Lemon,50,Kansas City Royals,3
+Lee,Mazzilli,50,Baltimore Orioles,1
+Cal,Ripken,50,Baltimore Orioles,1
+Moose,Stubing,50,California Angels,1
+Bob,Swift,50,Detroit Tigers,1
+Jim,Tracy,50,Los Angeles Dodgers,2
+Preston,Gomez,51,Houston Astros,1
+Mike,Hargrove,51,Baltimore Orioles,6
+Billy,Martin,51,New York Yankees,1
+Eddie,Stanky,51,Chicago White Sox,2
+Walt,Weiss,51,Colorado Rockies,1
+Jo-Jo,White,51,Cleveland Indians,1
+Ted,Williams,51,Washington Senators,1
+Buddy,Black,52,San Diego Padres,2
+Cito,Gaston,52,Toronto Blue Jays,4
+Chip,Hale,52,Arizona Diamondbacks,1
+Ralph,Houk,52,New York Yankees,5
+Charlie,Metro,52,Kansas City Royals,1
+Tony,Muser,52,Kansas City Royals,3
+Lefty,Phillips,52,California Angels,1
+Bryan,Price,52,Cincinnati Reds,1
+Harry,Walker,52,Houston Astros,2
+Ned,Yost,52,Milwaukee Brewers,2
+Marcel,Lachemann,53,California Angels,2
+Al,Lopez,53,Chicago White Sox,1
+Brad,Mills,53,Houston Astros,1
+Hank,O'Day,53,Cincinnati Reds,2
+Larry,Dierker,54,Houston Astros,1
+Jim,Frey,54,Chicago Cubs,1
+Billy,Gardner,54,Minnesota Twins,2
+Johnny,Oates,54,Texas Rangers,2
+Sam,Perlozzo,54,Baltimore Orioles,2
+Ryne,Sandberg,54,Philadelphia Phillies,1
+Bob,Lillis,55,Houston Astros,1
+Billy,Meyer,55,Pittsburgh Pirates,1
+Ron,Washington,55,Texas Rangers,1

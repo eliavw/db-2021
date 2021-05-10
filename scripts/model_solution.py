@@ -291,7 +291,7 @@ def query_08(connection, column_names, N=5, R=1):
         Teams as T
     WHERE 
         M1.playerID=P1.playerID AND 
-        M1.rank=1 AND 
+        M1.rank={R} AND 
         T.teamID=M1.teamID AND 
         T.yearID=M1.yearID
     GROUP BY 

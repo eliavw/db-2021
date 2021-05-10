@@ -90,6 +90,7 @@ def run_external_script(
                     all_q_params,
                 ) = before_execution(
                     fname,
+                    fs=fs,
                     all_q_colnam=all_q_colnam,
                     all_q_params=all_q_params,
                     q_idx=q_idx,
