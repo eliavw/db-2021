@@ -257,7 +257,6 @@ def evaluate_df(df_true, df_subm):
         report[
             "Ordering"
         ] = "Not verified; ordering only matters for queries with F1 > 0.90"
-        score *= 0.9
 
     return score, report
 
