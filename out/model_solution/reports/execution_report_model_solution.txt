@@ -1,0 +1,109 @@
+
+            Loading method: query_01 from module model_solution
+            
+
+            Loading method: query_02 from module model_solution
+            
+
+            Loading method: query_03 from module model_solution
+            
+
+            Loading method: query_04 from module model_solution
+            
+
+            Loading method: query_05 from module model_solution
+            
+
+            Loading method: query_06 from module model_solution
+            
+
+            Loading method: query_07 from module model_solution
+            
+
+            Loading method: query_08 from module model_solution
+            
+Running query: <function query_01 at 0x7f1093a5d790>
+with column names: ['W', 'L', 'yearID', 'nameGiven', 'NameLast', 'teamID']
+and parameters: {'X': 16}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_01 at 0x7f1093a5d790>
+with column names: ['W', 'L', 'yearID', 'nameGiven', 'NameLast', 'teamID']
+and parameters: {'X': 76}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_02 at 0x7f1093a5d820>
+with column names: ['nameFirst', 'nameLast']
+and parameters: {}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_03 at 0x7f1093a5d8b0>
+with column names: ['name', 'teamID']
+and parameters: {'X': 'Red'}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_03 at 0x7f1093a5d8b0>
+with column names: ['name', 'teamID']
+and parameters: {'X': 'City'}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_04 at 0x7f1093a5d940>
+with column names: ['nameLast', 'nameFirst', 'teamID', 'NumYears', 'AvgW', 'AvgR']
+and parameters: {'X': 14}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_04 at 0x7f1093a5d940>
+with column names: ['nameLast', 'nameFirst', 'teamID', 'NumYears', 'AvgW', 'AvgR']
+and parameters: {'X': 23}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_05 at 0x7f1093a5da60>
+with column names: ['name', 'nameFirst', 'nameLast', 'HRs']
+and parameters: {'X': 1920}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_05 at 0x7f1093a5da60>
+with column names: ['name', 'nameFirst', 'nameLast', 'HRs']
+and parameters: {'X': 2000}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_06 at 0x7f1093a5daf0>
+with column names: ['birthYear', 'birthMonth', 'birthDay', 'nameLast', 'nameFirst']
+and parameters: {}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_07 at 0x7f1093a5db80>
+with column names: ['nameFirst', 'nameLast', 'awardID', 'yearID']
+and parameters: {'X': 1987}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_07 at 0x7f1093a5db80>
+with column names: ['nameFirst', 'nameLast', 'awardID', 'yearID']
+and parameters: {'X': 1975}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_08 at 0x7f1093a5dc10>
+with column names: ['nameFirst', 'nameLast', 'Age', 'teamName', 'NrRankR']
+and parameters: {'N': 13, 'R': 2}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+Running query: <function query_08 at 0x7f1093a5dc10>
+with column names: ['nameFirst', 'nameLast', 'Age', 'teamName', 'NrRankR']
+and parameters: {'N': 31, 'R': 4}
+
+----> No exceptions occured, *typically* this indicates your query ran succesfully with these parameters. <----
+        
+

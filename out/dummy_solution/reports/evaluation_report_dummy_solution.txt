@@ -1,0 +1,287 @@
+# dummy_solution
+Scores for queries provided by file: dummy_solution
+
+
+
+
+# Query Index: 01
+
+
+## Parameter Index: 01
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (1,1,1)
+Parameters:
+	X = 16
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+
+
+## Parameter Index: 02
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (1,2,1)
+Parameters:
+	X = 76
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+--- ------------------ --- ------------------ --- ------------------ --- ------------------ ---
+
+    
+    
+
+
+
+# Query Index: 02
+
+
+## Parameter Index: 01
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (2,1,1)
+Parameters:
+Overall score: 	0.8738394320043691
+Breakdown:
+	TP           = 8
+	FP           = 86
+	FN           = 1729
+	precision    = 0.0851063829787234
+	recall       = 0.004605641911341394
+	F1           = 0.008738394320043691
+	FP intuition = A tuple that should NOT have been in your solution.
+	FP example   = ('Glenn', 'Adams')
+	FN intuition = A tuple that should have been in your solution.
+	FN example   = ('Paul', 'Swingle')
+	Remark       = 
+    A perfect F1 score means your results contained all tuples it should.
+    A perfect score requires a perfect F1 + perfect ordering.
+    
+	Ordering     = Not verified; ordering only matters for queries with F1 > 0.90
+--- ------------------ --- ------------------ --- ------------------ --- ------------------ ---
+
+    
+    
+
+
+
+# Query Index: 03
+
+
+## Parameter Index: 01
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (3,1,1)
+Parameters:
+	X = Red
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+
+
+## Parameter Index: 02
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (3,2,1)
+Parameters:
+	X = City
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+--- ------------------ --- ------------------ --- ------------------ --- ------------------ ---
+
+    
+    
+
+
+
+# Query Index: 04
+
+
+## Parameter Index: 01
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (4,1,1)
+Parameters:
+	X = 14
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+
+
+## Parameter Index: 02
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (4,2,1)
+Parameters:
+	X = 23
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+--- ------------------ --- ------------------ --- ------------------ --- ------------------ ---
+
+    
+    
+
+
+
+# Query Index: 05
+
+
+## Parameter Index: 01
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (5,1,1)
+Parameters:
+	X = 1920
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+
+
+## Parameter Index: 02
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (5,2,1)
+Parameters:
+	X = 2000
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+--- ------------------ --- ------------------ --- ------------------ --- ------------------ ---
+
+    
+    
+
+
+
+# Query Index: 06
+
+
+## Parameter Index: 01
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (6,1,1)
+Parameters:
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+--- ------------------ --- ------------------ --- ------------------ --- ------------------ ---
+
+    
+    
+
+
+
+# Query Index: 07
+
+
+## Parameter Index: 01
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (7,1,1)
+Parameters:
+	X = 1987
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+
+
+## Parameter Index: 02
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (7,2,1)
+Parameters:
+	X = 1975
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+--- ------------------ --- ------------------ --- ------------------ --- ------------------ ---
+
+    
+    
+
+
+
+# Query Index: 08
+
+
+## Parameter Index: 01
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (8,1,1)
+Parameters:
+	N = 13
+	R = 2
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+
+
+## Parameter Index: 02
+
+### Version Index: 01
+Indices:       	(Q,P,V) = (8,2,1)
+Parameters:
+	N = 31
+	R = 4
+
+    Crash!
+
+    No .csv file was generated for this query with these parameters.
+
+    Please check the execution report for more runtime information.
+    
+--- ------------------ --- ------------------ --- ------------------ --- ------------------ ---
+
+    
+    
