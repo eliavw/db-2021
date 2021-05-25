@@ -320,3 +320,66 @@ def query_08(connection, column_names, N=5, R=1):
     df = res_to_df(res, column_names)  # Query in DataFrame brengen
 
     return df
+
+def query_08_v_02(connection, column_names, N=5, R=1):
+    # Bouw je query
+    query = """
+    SELECT 
+        M.nameFirst, 
+        M.nameLast, 
+        MIN(Mgr.yearID - M.birthYear) AS Age, 
+        T.name, 
+        COUNT(DISTINCT Mgr.yearID) AS NrRankR
+    FROM 
+        (
+            (Managers AS Mgr JOIN Master AS M ON Mgr.playerID = M.playerID) 
+        JOIN 
+            Teams as T 
+        ON
+            (
+            Mgr.teamID = T.teamID AND 
+            Mgr.yearID = T.yearID
+            )
+        )
+    WHERE 
+        Mgr.rank = {} AND 
+        (M.nameFirst, M.nameLast) IN 
+            (
+            SELECT 
+                M2.nameFirst, 
+                M2.nameLast
+            FROM 
+                Managers AS Mgr2 JOIN Master AS M2 
+                ON 
+                    Mgr2.playerID = M2.playerID
+            WHERE 
+                Mgr2.rank = {} AND 
+                (Mgr2.yearID - M2.birthYear - {}) <= (
+                                                    SELECT 
+                                                        MIN(Mgr1.yearID - M1.birthYear)
+                                                    FROM 
+                                                            Managers AS Mgr1 
+                                                        JOIN 
+                                                            Master as M1 
+                                                        ON 
+                                                            Mgr1.playerID = M1.playerID
+                                                    WHERE Mgr1.rank = {}
+                                                      )
+            )
+    GROUP BY 
+        Mgr.playerID,
+        M.nameFirst,
+        M.nameLast
+    ORDER BY 
+        MIN(Mgr.yearID - M.birthyear) ASC, 
+        M.nameLast ASC, 
+        M.nameFirst ASC;      
+    """.format(
+        R, R, N, R
+    )
+
+    # Stap 2 & 3
+    res = run_query(connection, query)  # Query uitvoeren
+    df = res_to_df(res, column_names)  # Query in DataFrame brengen
+
+    return df
